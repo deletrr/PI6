@@ -51,9 +51,6 @@ O núcleo do sistema foi desenvolvido utilizando o ecossistema Kotlin com **Spri
 - **Spring Security & JJWT**: Implementação de autenticação e autorização via JSON Web Token (JWT).
 - **Spring Data JPA & Hibernate**: Camada de persistência para interação com o banco de dados.
 - **Flyway**: Gerenciamento de migrações do banco de dados PostgreSQL.
-- **Eclipse Paho**: Cliente MQTT de alta performance para comunicação com o hardware.
-- **ZXing**: Geração e leitura de QR Codes para integração com o aplicativo móvel.
-- **Spring Boot Validation**: Validação rigorosa de dados de entrada nos DTOs.
 
 ### Frontend (Kotlin Multiplatform & Compose)
 A interface foi construída com **Compose Multiplatform**, permitindo o compartilhamento de lógica e UI entre Android e Web.
