@@ -27,12 +27,11 @@ https://github.com/deletrr/PI4iot
 O estacionamento em áreas urbanas é um desafio constante que impacta motoristas, gestores públicos e a fluidez do tráfego. A dificuldade em encontrar vagas disponíveis, a fiscalização ineficiente e a ausência de dados em tempo real geram congestionamentos, desperdício de tempo e aumento da emissão de poluentes.
 O projeto IoT Cidade Conectada propõe uma solução baseada em Internet das Coisas (IoT), transformando vagas comuns em pontos inteligentes de monitoramento, permitindo controle em tempo real, maior eficiência urbana e melhor experiência para os usuários.
 
-## Videos:
-https://www.youtube.com/shorts/J7qhVD1H8Ag
-https://www.youtube.com/watch?v=lOSfP_FoQU4
+## Videos/Fotos:
+- https://www.youtube.com/shorts/J7qhVD1H8Ag
+- https://www.youtube.com/watch?v=lOSfP_FoQU4
 
-Este projeto integra hardware (ESP32), comunicação em tempo real (MQTT), um backend (Spring Boot) e 
-interfaces multiplataforma (Kotlin Multiplatform).
+- https://drive.google.com/drive/folders/1clsznqTwBUXOdKlwdcuHk4ek9343xUce?usp=sharing
 
 ## Integrantes
 
@@ -51,6 +50,9 @@ O núcleo do sistema foi desenvolvido utilizando o ecossistema Kotlin com **Spri
 - **Spring Security & JJWT**: Implementação de autenticação e autorização via JSON Web Token (JWT).
 - **Spring Data JPA & Hibernate**: Camada de persistência para interação com o banco de dados.
 - **Flyway**: Gerenciamento de migrações do banco de dados PostgreSQL.
+- **Eclipse Paho**: Cliente MQTT de alta performance para comunicação com o hardware.
+- **ZXing**: Geração e leitura de QR Codes para integração com o aplicativo móvel.
+- **Spring Boot Validation**: Validação rigorosa de dados de entrada nos DTOs.
 
 ### Frontend (Kotlin Multiplatform & Compose)
 A interface foi construída com **Compose Multiplatform**, permitindo o compartilhamento de lógica e UI entre Android e Web.
