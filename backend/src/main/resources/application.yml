@@ -1,0 +1,55 @@
+spring:
+  application:
+    name: pontolivre-backend
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ponto_livre
+    username: pontolivre_user
+    password: pontolivre_pass
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 10
+      connection-timeout: 30000
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: false
+
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+    baseline-on-migrate: true
+    validate-on-migrate: false
+
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+jwt:
+  secret: "c21hcnQtcGFya2luZy1qd3Qtc2VjcmV0LWtleS0yMDI0LXN1cGVyLXNlY3VyZS1rZXk="
+  expiration: 86400000
+
+mqtt:
+  broker-url: tcp://localhost:1883
+  client-id: pontolivre-backend-1
+  username: ""
+  password: ""
+  topics:
+    - "parquimetro/+/status"
+
+parking:
+  rate-per-hour: "6.50"
+  free-tolerance-minutes: 15
+  max-session-hours: 2
+  overtime-fine: "195.23"
+
+logging:
+  level:
+    com.pontolivre: INFO
+    org.eclipse.paho: WARN
+    org.flywaydb: INFO
